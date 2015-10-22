@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">JBHello</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="myname">Name: John Buckley</string>
+    <string name="StudentNo">Student Number: 12112615</string>
+    <string name="clickbutton">Click Me</string>
+</resources>
