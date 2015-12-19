@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".PhotoGallery"
+            android:label="@string/title_activity_photo_gallery"
+            android:parentActivityName=".JB_Assign3" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ie.dcu.buckley7mail.john.jbassign3.JB_Assign3" />
+        </activity>
     </application>
 
 </manifest>
