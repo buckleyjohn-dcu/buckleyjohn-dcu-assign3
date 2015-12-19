@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JBASSIGN3</string>
+<string name="hello_world">Hello world!</string>
+    <string name="showpics">SCHOOL GALLERY</string>
+    <string name="showrugby">RUGBY MATCH</string>
+    <string name="action_settings">Settings</string>
+</resources>
