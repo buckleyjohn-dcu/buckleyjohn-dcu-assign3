@@ -20,9 +20,42 @@
             android:name=".PhotoGallery"
             android:label="@string/title_activity_photo_gallery"
             android:parentActivityName=".JB_Assign3" >
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="image" />
+            </intent-filter>
+
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ie.dcu.buckley7mail.john.jbassign3.JB_Assign3" />
+        </activity>
+        <activity
+            android:name=".RugbyCounter"
+            android:label="@string/title_activity_rugby_counter"
+            android:parentActivityName=".JB_Assign3" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ie.dcu.buckley7mail.john.jbassign3.JB_Assign3" />
+        </activity>
+        <activity
+            android:name=".Email"
+            android:label="@string/title_activity_email"
+            android:parentActivityName=".RugbyCounter" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ie.dcu.buckley7mail.john.jbassign3.RugbyCounter" />
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+            <action android:name="android.intent.action.SENDTO" />
+            <data android:scheme="mailto" />
+            <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
     </application>
 

@@ -1,40 +1,30 @@
 package ie.dcu.buckley7mail.john.jbassign3;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+import android.widget.EditText;
 
-public class JB_Assign3 extends AppCompatActivity
-{
+import org.w3c.dom.Text;
+
+public class Email extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_jb__assign3);
+        setContentView(R.layout.activity_email);
 
+        EditText emailaddress = (EditText) findViewById(R.id.emailadd);
+        Text emailheading = (Text)findViewById(R.id.subjectofemail);
+        EditText emailtext = (EditText) findViewById(R.id.messageadd);
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu)
-    {
+    public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_jb__assign3, menu);
+        getMenuInflater().inflate(R.menu.menu_email, menu);
         return true;
-    }
-
-    public void showpics(View view)
-    {
-        Intent gallery = new Intent(this, PhotoGallery.class);
-        startActivity(gallery);
-    }
-    public void rugbycounter(View view)
-    {
-        Intent rugby = new Intent(this, RugbyCounter.class);
-        startActivity(rugby);
     }
 
     @Override
