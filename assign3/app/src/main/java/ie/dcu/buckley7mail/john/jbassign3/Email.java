@@ -8,8 +8,16 @@ import android.widget.EditText;
 
 import org.w3c.dom.Text;
 
+/**
+ * @author John Buckley < john.buckley7@mail.dcu.ie>
+ * @version 1.0
+ * @since  2015-12-27
+ */
 public class Email extends AppCompatActivity {
-
+    /**
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +28,11 @@ public class Email extends AppCompatActivity {
         EditText emailtext = (EditText) findViewById(R.id.messageadd);
     }
 
+    /**
+     *
+     * @param menu
+     * @return
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -27,6 +40,11 @@ public class Email extends AppCompatActivity {
         return true;
     }
 
+    /**
+     *
+     * @param item
+     * @return
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will

@@ -17,7 +17,7 @@
     <string name="initialscore">0</string>
     <string name="title_activity_email">Email</string>
     <string name="emailto">To:</string>
-    <string name="enteremail">Enter EmailL</string>
+    <string name="enteremail">Enter Email</string>
     <string name="emailsubject">Subject:</string>
     <string name="entersubject">Match Resutl</string>
     <string name="emailmessage">Message</string>
