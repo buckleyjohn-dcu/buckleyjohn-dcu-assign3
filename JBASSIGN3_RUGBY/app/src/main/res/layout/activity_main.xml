@@ -1,0 +1,146 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/teamhome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/hometeam" />
+
+            <TextView
+                android:id="@+id/hometeamscore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/initialscore" />
+
+            <Button
+                android:id="@+id/hometeamtry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:onClick="hometry"
+                android:text="@string/trycounter"/>
+
+            <Button
+                android:id="@+id/hometeamcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="homeconv"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/conversioncounter" />
+
+            <Button
+                android:id="@+id/hometeampen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="homepen"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/penaltycounter"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/teamaway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/awayteam" />
+
+            <TextView
+                android:id="@+id/awayteamscore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/initialscore"/>
+
+            <Button
+                android:id="@+id/awayteamtry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:onClick="awaytry"
+                android:text="@string/penaltycounter"/>
+            <Button
+                android:id="@+id/awayteamcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="awaycon"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/conversioncounter"/>
+
+            <Button
+                android:id="@+id/awayteampen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="awaypen"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/penaltycounter"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:onClick="resetButton"
+            android:text="@string/resetcounter" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/emailbutton"
+            android:onClick="emailresult"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/summarybutton"
+            android:onClick="showsummary"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">JBASSIGN3_RUGBY</string>
+    <string name="hometeam">HOME TEAM</string>
+    <string name="awayteam">AWAY TEAM</string>
+    <string name="penaltycounter">+3 PENALTY</string>
+    <string name="conversioncounter">+2 CONVERSION</string>
+    <string name="trycounter">+5 TRY</string>
+    <string name="resetcounter">RESET</string>
+    <string name="summarybutton">SUMMARY</string>
+    <string name="emailbutton">EMAIL</string>
+    <string name="initialscore">0</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_email">Email</string>
+    <string name="emailto">To:</string>
+    <string name="enteremail">Enter EmailL</string>
+    <string name="emailsubject">Subject:</string>
+    <string name="entersubject">Match Resutl</string>
+    <string name="emailmessage">Message</string>
+    <string name="entermessage">Enter Message</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>
