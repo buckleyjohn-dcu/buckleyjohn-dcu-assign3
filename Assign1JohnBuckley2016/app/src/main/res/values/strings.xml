@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Assign1 John Buckley 2016</string>
+    <string name="user_name">Name: John Buckley</string>
+    <string name="StudentID">Student ID: 12112615</string>
+    <string name="ButtonInstruct">Press Me</string>
+    <string name="mess_toast">You pressed the button.</string>
+</resources>
