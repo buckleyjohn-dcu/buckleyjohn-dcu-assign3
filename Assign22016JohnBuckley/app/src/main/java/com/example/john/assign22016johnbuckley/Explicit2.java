@@ -6,21 +6,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class Explicit2 extends AppCompatActivity {
-
+public class Explicit2 extends MainActivity
+{
+    TextView toAddress;
+    TextView subject;
     @Override
     // oncreate method of the activity lifecycle
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explicit2);
-        TtoAddress = (TextView) findViewById(R.id.mailto);
+        toAddress = (TextView) findViewById(R.id.mailto);
         subject = (TextView) findViewById(R.id.mailSubject);
-
-    public void onIntentReturn(View v) {
-
+    }
+    public void onIntentReturn(View v)
+    {
         Intent backtoMainIntent = new Intent(Explicit2.this, MainActivity.class);
-        backtoMainIntent.putExtra("NameValue", toAdress.getText().toString());
-        backtoMainIntent.putExtra("EmailValue", subject.getText().toString());
+        backtoMainIntent.putExtra("AddressValue", toAddress.getText().toString());
+        backtoMainIntent.putExtra("SubjectValue", subject.getText().toString());
 
         setResult(RESULT_OK, backtoMainIntent);
         finish();
