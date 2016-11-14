@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.john.assign22016johnbuckley.Explicit2">
+    <EditText
+        android:id="@+id/mailto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Emailto"
+        android:inputType="text">
+    </EditText>
+    <EditText
+        android:id="@+id/mailSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/EmailSubject"
+        android:layout_below="@+id/mailto"
+        android:inputType="text">
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send"
+        android:id="@+id/sendbutton"
+        android:layout_below="@+id/mailSubject"
+        android:layout_alignEnd="@+id/mailSubject" />
+
+</RelativeLayout>

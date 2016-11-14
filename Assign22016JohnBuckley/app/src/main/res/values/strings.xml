@@ -1,0 +1,14 @@
+<resources>
+  <string name="app_name">Assign 2 2016 John Buckley</string>
+    <string name="Implicit1">Implicit: Find DCU</string>
+    <string name="Implicit2">Implicit: Set 10 seconds timer</string>
+    <string name="Explicit1">Linear and Weights</string>
+    <string name="Activity3a">I am the width of my contents</string>
+    <string name="Activity3b">Width of my contents</string>
+    <string name="Explicit2">Send and Return</string>
+    <string name="Emailto">To:</string>
+    <string name="EmailSubject">Subject:</string>
+    <string name="Sendbutton">Send</string>
+
+
+</resources>
