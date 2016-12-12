@@ -1,3 +1,4 @@
+
 package com.example.john.assign22016johnbuckley;
 
 import android.app.Activity;
@@ -13,6 +14,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.util.Log;
 
+/**
+ * It is the activity for launching the app
+ * This is the screen that the user will see when the app is launched
+ * @author  JOhn Buckley
+ */
 public class MainActivity extends AppCompatActivity
 {
     final int GET_TEXT_REQUEST_CODE =1;
@@ -23,6 +29,11 @@ public class MainActivity extends AppCompatActivity
         super.onStart();
         Log.i(TAG, "The activity is visible and about to be started.");
     }
+
+    /**
+     * the oncreate method of the activity lifecylce
+     * @param savedInstanceState
+     */
     protected void onCreate(Bundle savedInstanceState)
         {
             if (savedInstanceState != null)
@@ -35,9 +46,11 @@ public class MainActivity extends AppCompatActivity
             /* initialize app */
             }
             super.onCreate(savedInstanceState);
+
             setContentView(R.layout.activity_main);
             final Button button = (Button) findViewById(R.id.showDCU);
             // Will be called when the user clicks on the Implicit:Find DCU button
+
             button.setOnClickListener(new View.OnClickListener()
             {
                 @Override
@@ -76,11 +89,6 @@ public class MainActivity extends AppCompatActivity
                 //Create an implicit Intent for starting the Set 10 seconds Timer activity
                     String message = "SDA Timer";
                     int seconds = 10;
-                    /**
-                     * @ Extra_Message: A custom to identify the timer
-                     * @ Extra Length: the length of the timer in seconds
-                     * @ Extra_Skip_UI: A boolean on which the app will skip the UI when setting the timer
-                     */
                     Intent intent = new Intent(AlarmClock.ACTION_SET_TIMER)
                     .putExtra(AlarmClock.EXTRA_MESSAGE, message)
                     .putExtra(AlarmClock.EXTRA_LENGTH, seconds)
@@ -159,7 +167,6 @@ public class MainActivity extends AppCompatActivity
                         Log.i(TAG, "Send and Return Intent will not work");
                         /* will not start intent */
                     }
-
                 }
                 protected void onActivityResult(int requestCode, int resultCode, Intent data)
                 {

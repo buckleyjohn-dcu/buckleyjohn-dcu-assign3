@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Assign 3 2016 John Buckley</string>
+    <string name="pizzalist">Pizza Menu List</string>
+    <string name="makePizza">Make your own Pizza</string>
+    <string name="pizza1">BBQ</string>
+    <string name="pizza1Desc">BBQ Pork,BBQ sauce, Ham</string>
+    <string name="pizza2">Calzone</string>
+    <string name="pizza2Desc">Mozzarella, Salami, Ham, Parmesan</string>
+    <string name="pizza3">Hawaiian</string>
+    <string name="pizza3Desc">Ham, Pinapple, Sweetcorn</string>
+    <string name="pizza4">Pepperoni</string>
+    <string name="pizza4Desc">Pepperoni,Mozzarella, Tomatoe Sauce</string>
+    <string name="pizza5">Margherita</string>
+    <string name="pizza5Desc">Mozzarella, Tomatoe Sauce</string>
+    <string name="pizza6">Chicken</string>
+    <string name="pizza6Desc">Chicken,Peppers,Sweet Chili sauce</string>
+    <string name="YourName">Please enter your Name</string>
+    <string name="Toppings">TOPPINGS</string>
+    <string name="Checkbox1">Pepperoni</string>
+    <string name="Checkbox2">Extra Cheese</string>
+    <string name="Checkbox3">Onions</string>
+    <string name="Checkbox4">Mushrooms</string>
+    <string name ="toppingsSummary">TOPPINGS SUMMARY</string>
+    <string name ="numofPizzas">QUANTITY</string>
+    <string name ="summarybutton">SUMMARY</string>
+    <string name ="send">Send</string>
+    <string name ="emailsubject"></string>
+    <integer-array name="quantityArray">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </integer-array>
+
+</resources>

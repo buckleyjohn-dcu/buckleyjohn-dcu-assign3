@@ -30,6 +30,7 @@
         android:text="send"
         android:id="@+id/sendbutton"
         android:layout_below="@+id/mailSubject"
-        android:layout_alignEnd="@+id/mailSubject" />
+        android:layout_alignEnd="@+id/mailSubject"
+        />
 
 </RelativeLayout>
